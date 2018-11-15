@@ -3,7 +3,7 @@
 Este projeto tem por objetivo desenvolver um Chat na linguagem java.
 Para complementar a avaliação do desempenho do aluno na Disciplina de Linguagem de Programação Orientada a Objetos II do curso de Ciência da Computação da Universidade Luterana do Brasil - ULBRA.
 
-#Definição
+# Definição
 
 O trabalho consiste em criar uma aplicação Cliente/Servidor para que seja possível realizar conversas em grupo entre diferentes usuários
 Requisitos
@@ -18,8 +18,8 @@ Requisitos
     No máximo em duplas
     Constatação de cópia/plágio ou não saber como determinada parte do código funciona é nota zero (independente de quem copiou)
 
-#Protocolo de Comunicação
-#Entrar no Grupo 
+# Protocolo de Comunicação
+# Entrar no Grupo 
 
 Cliente envia comando ENTRAR juntamente com o nickname desejado. O servidor verifica se já existe um cliente com o mesmo nickname (se existir deve retornar um erro), caso não exista, deve retornar a lista das últimas 20 mensagens para o cliente que se conectou e uma mensagem para os demais informando que o cliente entrou no grupo.
 
@@ -38,7 +38,7 @@ MSG nickname Entrou no grupo
 Resposta em caso de erro
 ERRO mensagem de erro
 
-#Enviar mensagem
+# Enviar mensagem
 
 Cliente envia comando MSG juntamente com a mensagem que deve ser enviada ao grupo. Caso OK, enviar a mensagem para todos os usuários conectados (inclusive o cliente que enviou). Caso erro, enviar mensagem de erro.
 
@@ -52,7 +52,7 @@ MSG nickname Estou a fim de falar com alguém
 Resposta em caso de erro
 ERRO mensagem de erro
 
-#Sair do Grupo
+# Sair do Grupo
 
 Cliente envia comando SAIR para o servidor. O servidor retorna uma mensagem de retorno para todos os clientes avisando que o nickname saiu do grupo e desconecta o cliente (lembrando que, após isto, o nickname deve ser liberado para uso).
 
@@ -62,7 +62,7 @@ SAIR
 Resposta:
 MSG nickname saiu do grupo
 
-Importante:
+# Importante:
 
     O servidor deve poder funcionar com qualquer cliente que saiba conversar o protocolo definido acima.
     O cliente deve poder funcionar com qualquer servidor que saiba conversar o protocolo definido acima.
